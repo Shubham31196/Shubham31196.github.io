@@ -5,6 +5,14 @@ body{
   margin: 0px;
 }
 
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header{
+  
+
 .wrapper{
   background: black;
   height: 100vh;
