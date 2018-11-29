@@ -1,0 +1,149 @@
+body{
+  background: black;
+  overflow-x: hidden;
+  padding: 0px;
+  margin: 0px;
+}
+
+.topnav{
+	float:right;
+    color: #f2f2f2;
+	text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+	width:75%;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#mySidenav a {
+    position: absolute; 
+    left: -80px; 
+    transition: 0.3s; 
+    padding: 15px; 
+    width: 100px; 
+    text-decoration: none; 
+    font-size: 20px; 
+    color: white; 
+    border-radius: 0 5px 5px 0; 
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#projects {
+    top: 140px;
+    background-color: #f44336;
+}
+
+#resume{
+	top: 140px;
+	background-color: #2196F3;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper{
+  background: black;
+  height: 100vh;
+  position: relativ e;
+  font-family: "Helvetica";
+  padding: 0px;
+  margin: 0px;
+}
+
+.wrapper .image-container{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background: url("shubham.jpg");
+  background-size: cover;
+  opacity: 0.4;
+}
+
+.name{
+  position: absolute;
+  color: #AEB6BF;
+  top: 50vh;
+  left: 50vw;
+  text-align: center;
+  transform: translate(-50%,-50%);
+}
+
+.name span{
+  font-style: "Helvetica";
+  font-size: 4em;
+}
+
+
+.social{
+  position: absolute;
+  padding-top: 10vh;
+  text-align: center;
+  top: 70vh;
+  left: 50vw;
+  transform: translate(-50%,-50%);
+}
+
+.social .link{
+  font-size: 2.5em;
+  color: grey;
+  transition: transform .5s;
+}
+
+.social .link:hover{
+  transform: scale3d(1.3, 1.3, 1);
+  color: white;
+}
+
+.button{
+  margin: 8px auto;
+}
+.btn-dark{
+  color: #abc;
+}
+
+.aboutMe{
+  position: absolute;
+  padding-top: 10vh;
+  min-height: 40vh;
+  text-align: center;
+  top: 60vh;
+  left: 50vw;
+  transform: translateX(-50%);
+  background: #fafafa;
+  opacity:0.6;
+  padding: 20px;
+}
+
+@media screen and (max-width:500px){
+  .name{
+    position: absolute;
+    text-align: center;
+    top: 30vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+  }
+
+  .wrapper .image-container{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background: url("shubhamMobile.jpg");
+    background-size: contain;
+
+  }
+}
